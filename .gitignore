@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 克隆的外部仓库（体积大，不纳入本仓库）
+external/
+
+# 模型权重 / 数据 / GGUF 等大文件
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.npz
+data/
+models/
+
+# 系统
+.DS_Store

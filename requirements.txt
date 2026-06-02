@@ -1,0 +1,18 @@
+# 阶段一（LLM / PyTorch 入门）核心依赖
+# 注意：PyTorch 官方 wheel 通常滞后于最新 Python。建议使用 Python 3.10 - 3.12。
+# 若你的默认 python 是 3.13/3.14 且 pip 装不上 torch，请用 pyenv/conda 装一个 3.12 环境。
+
+# --- 基础科学计算（任何 Python 版本都能装，用于自检 demo）---
+numpy>=1.26
+
+# --- 深度学习框架（阶段一主力，CPU 版即可入门；有 NVIDIA GPU 可换 CUDA 版）---
+torch>=2.2
+tiktoken>=0.7          # OpenAI 分词器，LLMs-from-scratch / nanoGPT 会用到
+matplotlib>=3.8        # 画 loss 曲线
+tqdm>=4.66             # 进度条
+jupyterlab>=4.0        # 跑 LLMs-from-scratch 的 notebook
+
+# --- 阶段三（AI4S）轻量入口（可选，按需在对应阶段再装）---
+# deepchem>=2.8
+# ase>=3.22
+# scikit-learn>=1.4
